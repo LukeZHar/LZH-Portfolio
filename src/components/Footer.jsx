@@ -1,3 +1,5 @@
+import RedirectButton from "./RedirectButton"
+
 export default function Footer() {
     return (
         <><div className="socials">
@@ -19,6 +21,8 @@ export default function Footer() {
                 <p>Address: QLD, Australia</p>
             </div>
             {/* <!--Link back to top-- > */}
-            <a id="back" href="#heading">Back to Top</a><p><b>Luke Harris 2024</b></p></>
+            <a id="back" href="#heading">Back to Top</a><p><b>Luke Harris 2024</b></p>
+            <RedirectButton />
+        </>    
     )
 }
