@@ -1,107 +1,103 @@
-/* Main section */
+/* Main section styling */
 main {
     display: flex;
-    text-align: center;
-    color: var(--primary-background);
-    padding-left: 10px;
-    padding-right: 10px;
+    flex-direction: column; /* Stack children vertically */
+    text-align: center; /* Center-align text */
+    color: var(--primary-background); /* Text color */
+    padding: 0 10px; /* Horizontal padding */
 }
 
-/* Image of me on the main page */
+/* Image styling for the main page */
 main img {
-    width: 50%;
-    height: 50%; 
-    border: solid black 5px;
-    border-radius: 50%; 
-    border-top-left-radius: 20px;
-    animation-name: fade-in;
-    animation-duration: 4s;
-    margin: 20px 0;
+    max-width: 50%; /* Limit image width */
+    height: auto; /* Maintain aspect ratio */
+    border: 5px solid black; /* Defined border */
+    border-radius: 50%; /* Circular image */
+    margin: 20px 0; /* Margin above and below */
+    animation: fade-in 4s; /* Fade-in animation */
 }
 
-/* The Text block edits background, color and layout */
+/* Text block styling */
 .home-text {
-    margin-bottom: 20px;
-    animation: fade-in;
-    animation-duration: 3s;
-    border: solid black;
-    background-color: var(--primary-background);
-    color: var(--primary-fontcolor);
+    margin-bottom: 20px; /* Space below text block */
+    border: solid black; /* Border around text block */
+    background-color: var(--primary-background); /* Background color */
+    color: var(--primary-fontcolor); /* Font color */
+    animation: fade-in 3s; /* Fade-in animation */
 }
 
-/* The Hello, I'm luke harris. Sets it so its just the length of text */
+/* Container for the text */
 .container {
-    display: inline-block;
+    display: inline-block; /* Inline-block to fit content width */
 }
 
-/* Controls the style of text and adds the animation */
+/* Styling for the main welcome text and animations */
 .text {
-    color: var(--secondary-color);
-    border-right: solid 2px;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 2s steps(22), cursor .4s step-end infinite alternate;
+    color: var(--secondary-color); /* Text color */
+    border-right: 2px solid; /* Cursor effect */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    animation: typing 2s steps(22), cursor 0.4s step-end infinite alternate; /* Typing and cursor animations */
 }
 
-
-/* Screens 481px plus will change the layout for tablets*/
+/* Media query for tablets and above */
 @media screen and (min-width: 481px) {
     .main-section {
-        display: flex; 
-        text-align: center;
-        margin: 20px;
+        display: flex; /* Flex layout for section */
+        text-align: center; /* Center text */
+        margin: 20px; /* Margin around the section */
     }
       
     main img {
-        width: 250px;
-        height: 320px;
-        margin: 10px 50px;
+        width: 250px; /* Specific image width */
+        height: auto; /* Maintain aspect ratio */
+        margin: 10px 50px; /* Margin around the image */
     }
 
     .home-text {
-        margin: auto;
-        margin-left: 20px;
-        padding: 20px 10px;
+        margin: auto; /* Center the text block */
+        padding: 20px 10px; /* Padding inside text block */
     }
 }
 
-/* Screens 1080px plus will change the layout for desktop */
+/* Media query for desktop screens */
 @media screen and (min-width: 1080px) {
     main {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        font-size: 30px;
+        flex-direction: row; /* Row layout for larger screens */
+        justify-content: center; /* Center children */
+        font-size: 30px; /* Increase font size */
     }
 
     main img {
-        width: auto;
-        width: 330px;
-        height: 400px;
-    }
-    
-}
-/* Animation section which are attached above */
-/* creates the fade in effect */
-@keyframes fade-in {
-    0% {
-        opacity: 0%;
-    }
-    100% {
-        opacity: 100%;
+        width: 330px; /* Fixed image width for desktop */
+        height: auto; /* Maintain aspect ratio */
     }
 }
 
-/* Creates the blinking effect */
+/* Animation keyframes */
+/* Fade-in effect */
+@keyframes fade-in {
+    0% {
+        opacity: 0%; /* Fully transparent */
+    }
+    100% {
+        opacity: 100%; /* Fully opaque */
+    }
+}
+
+/* Cursor blinking effect */
 @keyframes cursor {
     50% {
-        border-color: transparent;
+        border-color: transparent; /* Hide border at halfway point */
     } 
 }
-/* Creates the typing effect */
+
+/* Typing effect */
 @keyframes typing {
     from {
-        width: 0
+        width: 0; /* Start with no width */
+    }
+    to {
+        width: 100%; /* End with full width */
     }    
 }

@@ -1,0 +1,81 @@
+/* styles/header.css */
+.heading {
+    background-color: var(--primary-background);
+    text-align: center; /* Center-aligned text */
+    padding: 12px;
+    margin-bottom: 4px; 
+}
+
+/* Logo styling */
+.logo a img {
+    height: 100px; /* Set height for the logo image */
+    transition: transform 0.3s; /* Smooth scaling transition */
+}
+
+.logo a img:hover {
+    transform: scale(1.1); /* Scale logo slightly on hover */
+}
+
+/* Navigation bar styling */
+.nav-bar {
+    display: flex; /* Horizontal navigation links */
+    justify-content: space-around; /* Space navigation links evenly */
+    width: 50%; /* Limit navigation width */
+    transition: max-height 0.3s ease-in-out;
+}
+
+
+/* Link styles */
+.nav-bar a {
+    text-decoration: none; /* Remove underline */
+    color: var(--secondary-color); /* Link color */
+    padding: 10px; /* Add padding for better clickable area */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth hover effect */
+}
+
+.nav-bar a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Lighten background on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: row; /* Stack links vertically on mobile */
+        display: none; /* Hide navigation links initially */
+        align-items: center; /* Center links */
+        width: 100%; /* Full width on mobile */
+    }
+    
+    .nav-bar.hidden {
+        display: none; /* Hide the navigation bar initially */
+    }
+
+    /* Show navigation links when the menu is active */
+    .nav-bar.active {
+        display: flex; /* Show navigation links when active */
+    }
+}
+
+/* Toggle button for mobile */
+.toggle-button {
+    display: none; /* Hide the toggle button by default */
+    flex-direction: column; /* Align lines vertically */
+    justify-content: space-around; /* Space lines */
+    height: 30px; /* Height of the toggle area */
+    cursor: pointer; /* Pointer on hover */
+}
+
+.toggle-button div {
+    width: 30px; /* Width of the lines */
+    height: 4px; /* Thickness of the lines */
+    background: var(--secondary-color); /* Colour of the toggle lines */
+}
+
+/* Show toggle button on mobile */
+@media (max-width: 768px) {
+    .toggle-button {
+        display: flex; /* Show toggle button on small screens */
+    }
+}

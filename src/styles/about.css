@@ -1,99 +1,85 @@
-/* Main section */
+/* Main section styling */
+
 main {
     display: flex;
-    text-align: center;
-    flex-direction: column;
-    color: var(--primary-background);
-    padding-left: 10px;
-    padding-right: 10px;
-    
+    flex-direction: column; /* Stack the elements vertically */
+    align-items: center; /* Center elements horizontally */
+    padding: 10px; /* Add padding on both sides */
+    color: var(--primary-fontcolor); /* Use primary font color */
 }
 
-/* Image of me on the about page */
+/* Image of the user on the about page */
 main img {
     width: 50%;
-    height: 50%; 
-    border: solid black 5px;
-    border-radius: 50%; 
-    border-top-left-radius: 20px;
-    margin-top: 20px;
+    height: auto; /* Maintain aspect ratio */
+    max-width: 300px; /* Cap width for larger screens */
+    border: 5px solid black;
+    border-radius: 50%; /* Circular image */
+    margin-top: 20px; /* Space above the image */
 }
 
-/* The Text block edits background, color and layout */
+/* About text block styling */
 .about-text {
-    text-align: start;
-    margin: 24px 4px;
-    padding: 7px 20px;
-    border: solid black;
-    background-color: var(--primary-background);
-    color: var(--primary-fontcolor);
+    text-align: start; /* Align text to the left */
+    margin: 24px 4px; /* Margin on all sides */
+    padding: 7px 20px; /* Padding for the text block */
+    border: solid black; /* Border around the text block */
+    background-color: var(--primary-background); /* Background color */
+    color: var(--primary-fontcolor); /* Font color */
 }
 
-/* All the headings and icons */
+/* Headings and icon styling */
 h2 {
-    color: var(--secondary-color);
-    text-decoration: underline;
+    color: var(--secondary-color); /* Heading color */
+    text-decoration: underline; /* Underline heading */
 }
 
-h3 {
-    color: var(--secondary-color);
-}
-
-h4 {
-    color: var(--secondary-color);
+h3, h4 {
+    color: var(--secondary-color); /* Color for h3 and h4 */
 }
 
 i {
-    color: var(--secondary-color);
-    font-size: 25px;
+    color: var(--secondary-color); /* Icon color */
+    font-size: 25px; /* Icon size */
 }
 
-/* Resume button, text and link */
-#resume {
-    height: 40px;
-    background-color: var(--secondary-color);
-    border: solid black 2px;
-    border-radius: 6px;
-    min-width: 80px;
-    font-size: 15px;
-    text-decoration: none;
-    color: var(--primary-background);
-    
+/* Resume button styling */
+.resume {
+    height: 40px; /* Button height */
+    background-color: var(--secondary-color); /* Button background */
+    border: 2px solid black; /* Button border */
+    border-radius: 6px; /* Rounded corners */
+    min-width: 80px; /* Minimum width for the button */
+    font-size: 15px; /* Font size for button text */
+    color: var(--primary-background); /* Font color */
+    text-align: center; /* Center text */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
 }
 
-#resume:hover {
-    cursor: pointer;
-    background-color: grey;
-    transform: scale(1.1);
+.resume:hover {
+    background-color: grey; /* Background color on hover */
+    transform: scale(1.1); /* Slight scale effect on hover */
 }
 
-/* Screens 481px plus will change the layout for tablets*/
+/* Media query for tablets */
 @media screen and (min-width: 481px) {
-    .main-section {
-        display: flex;
-        text-align: start;
-        font-size: 17px;
-    }
     .about-text {
-        padding-left: 50px;
-        margin-left: 50px;
-        border: solid black;
-        background-color: var(--primary-background);
-        color: var(--primary-fontcolor);
+        padding-left: 50px; /* Increase left padding on larger screens */
+        margin-left: 50px; /* Increase left margin */
     }
-      
+    
     main img {
-        width: 270px;
-        height: 350px;
-        margin-top: 30px;
-        margin-left: 20px;
+        width: 270px; /* Set a specific size for the image */
+        height: auto; /* Maintain aspect ratio */
+        margin-top: 30px; /* Space above the image */
+        margin-left: 20px; /* Space to the left */
     }
 }
 
-/* Screens 1080px plus will change the layout for desktop */
+/* Media query for desktops */
 @media screen and (min-width: 1080px) {
-    
     .about-text {
-        margin-right: 50px;
+        margin-right: 50px; /* Increase right margin on larger screens */
     }
 }

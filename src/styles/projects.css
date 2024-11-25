@@ -1,0 +1,54 @@
+/* Main section styling */
+main {
+    display: flex; /* Use flexbox layout */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    justify-content: center; /* Center items within the main container */
+    gap: 24px; /* Space between project items */
+    padding: 20px; /* Optional: add padding to the main container */
+}
+
+/* Project block for title and image */
+article {
+    overflow: hidden; /* Hide overflow */
+    text-align: center; /* Center text for project blocks */
+    margin: 20px 10px; /* Space around each article */
+    flex: 1 1 300px; /* Allow articles to grow and shrink with a base width */
+}
+
+/* Border and background for project */
+.project {
+    border: 5px solid black; /* Define border */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    background-color: var(--primary-background); /* Set background color */
+    color: var(--secondary-color); /* Set text color */
+    padding: 15px; /* Add padding inside project blocks */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition on hover */
+}
+
+/* Project image styling */
+.project-image {
+    width: 100%; /* Responsive image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Scale effect on hover for project blocks */
+.project:hover {
+    transform: scale(1.05); /* Scale up the project block */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect on hover */
+}
+
+/* Responsive design adjustments */
+@media screen and (min-width: 768px) {
+    /* Adjustments for larger screens can be added here */
+    article {
+        flex: 1 1 300px; /* Base flex for wider screens */
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    /* Additional styles for desktop view */
+    article {
+        flex: 1 1 400px; /* Adjust flex basis for even wider screens */
+    }
+}

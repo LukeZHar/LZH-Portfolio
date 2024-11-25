@@ -1,0 +1,47 @@
+/* styles/footer.css */
+footer {
+    background-color: var(--primary-background); /* Footer background color */
+    color: var(--secondary-color); /* Footer text color */
+    text-align: center; /* Center-align text */
+    padding: 16px; /* Padding for footer */
+}
+
+/* Social media links styling */
+.socials {
+    display: flex; /* Display links in a row */
+    justify-content: center; /* Center the social icons */
+    margin-bottom: 16px; /* Space below social links */
+}
+
+.socials a {
+    margin: 0 10px; /* Space between icons */
+    font-size: 24px; /* Icon size */
+    color: var(--secondary-color); /* Icon color */
+    transition: transform 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.socials a:hover {
+    transform: scale(1.1); /* Slight enlarge effect on hover */
+    color: lightgrey; /* Change icon color on hover */
+}
+
+/* Contact information styles */
+.info {
+    margin: 10px 0; /* Space around contact info */
+}
+
+.info p {
+    margin: 5px 0; /* Margin for spacing between paragraphs */
+}
+
+/* Copyright information styles */
+.footer h4 {
+    font-size: 12px; /* Font size for copyright text */
+}
+
+/* Back to top link */
+.back {
+    color: var(--primary-fontcolor); /* Color for the back to top link */
+    text-decoration: underline; /* Underline link for emphasis */
+    cursor: pointer; /* Pointer cursor on hover */
+}

@@ -1,0 +1,151 @@
+/* Link to Comic Neue font */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/* Root variables for color */
+:root {
+    --primary-background: #262626;
+    --primary-fontcolor: #DAFFFD;
+    --secondary-color: #FFFFFF;
+}
+
+/* Global styles */
+* {
+    box-sizing: border-box; /* Consistent box sizing */
+    font-family: 'Comic Neue', 'Times New Roman', Times, serif; /* Default font */
+    
+}
+
+/* Body layout and background image */
+body {
+    margin: 0;
+    min-height: 100vh; /* Use vh for viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../assets/background-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(5px); /* Blurring effect for background */
+    min-height: 100vh;
+}
+
+/* Header styling */
+.heading {
+    background-color: var(--primary-background);
+    text-align: center; /* Center-aligned text */
+    padding: 12px;
+    margin-bottom: 4px;    
+}
+
+/* Logo styles */
+.logo a img {
+    height: 100px;
+    border: 5px solid #FFFFFF; /* Specify border width for clarity */
+    border-radius: 50%; /* Circular border */
+    margin-bottom: 20px;
+    transition: transform 0.3s; /* Smooth scaling transition */
+}
+
+.logo a img:hover {
+    transform: scale(1.2); /* Scale logo on hover */
+}
+
+/* Navigation bar styles */
+.nav-bar {
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: space-around; /* Evenly space links */
+    font-size: 22px; /* Font size for nav links */
+}
+
+.nav-bar a {
+    text-decoration: none; /* Remove underline */
+    color: #262626; /* Link text color */
+    background-color: var(--secondary-color);
+    border-radius: 5px;  
+    padding: 10px; /* Add padding for better clickable area */
+}
+
+.nav-bar a:hover {
+    background-color: whitesmoke; /* Change background on hover */
+    transform: scale(1.1); /* Enlarge link on hover */
+    transition: transform 0.3s; /* Smooth transition effect */
+}
+
+
+/* Media query for tablets and above */
+@media screen and (min-width: 481px) {
+    .heading {
+        display: flex;
+        align-items: flex-end; /* Align items at the bottom */
+        justify-content: space-around; /* Space items evenly */
+        flex-direction: row-reverse; /* Reverse order of items */
+    }
+
+    .logo a img {
+        height: 100px; /* Keep logo height */
+    }
+
+    .nav-bar {
+        width: 50%; /* Width for larger screens */
+        font-size: 25px; /* Larger font size */
+        background-color: var(--secondary-color); /* Background for nav */
+        border-radius: 20px; /* Rounded corners for nav */
+    }
+
+    .socials {
+        width: 50%; /* Width for social links */
+    }
+
+    .info {
+        text-align: end; /* Right-align info text */
+        padding-right: 5%; /* Space to the right */
+    }
+}
+
+
+/* Footer styling */
+.footer {
+    background-color: var(--primary-background);
+    text-align: center; /* Center footer content */
+    padding: 16px; 
+    color: var(--secondary-color); /* Footer text color */
+}
+
+/* Social links styling */
+.socials {
+    display: flex;
+    justify-content: space-around; /* Space social icons */
+    margin-bottom: 24px; /* Space below social links */
+}
+
+.socials a i {
+    font-size: 24px; /* Icon size */
+    color: var(--secondary-color); /* Icon color */
+    transition: transform 0.3s, color 0.3s; /* Smooth hover transition */
+}
+
+.socials a i:hover {
+    transform: scale(1.2); /* Enlarge icon on hover */
+    color: lightgrey; /* Change color on hover */
+}
+
+/* Info text styling */
+.info {
+    color: var(--primary-fontcolor); /* Font color for info */
+}
+
+.info p {
+    margin: 5px 0; /* Margin for paragraph spacing */
+}
+
+/* Copyright information styling */
+.footer h4 {
+    font-size: 12px; /* Font size for copyright text */
+}
+
+/* Edits the back to top link */
+.back {
+    color: var(--primary-fontcolor);
+}

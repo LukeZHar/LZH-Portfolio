@@ -1,0 +1,105 @@
+main {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically */
+    flex-direction: column; /* Stack items vertically */
+    margin-bottom: 20px; /* Margin below the main section */
+    padding: 20px 10px; /* Padding inside the main section */
+}
+
+/* Form layout and background */
+.full-form {
+    border: 2px solid black; /* Defined border for clarity */
+    background-color: var(--primary-background); /* Background color */
+    color: var(--primary-fontcolor); /* Font color */
+    padding: 20px; /* Increase padding for a better layout */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Form header styles */
+h2 {
+    color: var(--secondary-color); /* Header color */
+    text-decoration: underline; /* Underline text */
+}
+
+/* Emphasized email text */
+strong {
+    color: var(--secondary-color); /* Color for emphasized text */
+}
+
+/* Form group layout: label, input, and button */
+.form-group {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack label and input vertically */
+    margin-bottom: 20px; /* Space between form groups */
+}
+
+/* Form label styling */
+.form-group label {
+    font-size: 18px; /* Font size for labels */
+}
+
+/* Form input styling */
+.form-input {
+    border: 1px solid black; /* Border for inputs */
+    outline: none; /* Remove default outline */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 18px; /* Font size */
+    padding: 8px; /* Padding inside inputs for better usability */
+}
+
+.form-input:not(.form-textarea) {
+    height: 35px; /* Height for standard inputs */
+}
+
+.form-textarea {
+    resize: vertical; /* Allow vertical resizing for textareas */
+}
+
+/* Focus effect for input fields */
+.form-input:focus {
+    box-shadow: 0 0 5px 2px #DAFFFD; /* Glow effect on focus */
+}
+
+/* Button styles */
+.bttn {
+    text-align: center; /* Center-align content within button section */
+}
+
+.submit {
+    height: 40px; /* Button height */
+    background-color: var(--secondary-color); /* Background color */
+    border: 2px solid black; /* Border for button */
+    border-radius: 6px; /* Rounded corners */
+    min-width: 120px; /* Minimum width for button */
+    font-size: 20px; /* Font size */
+    color: var(--primary-background); /* Button text color */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition effects */
+}
+
+.submit:hover {
+    cursor: pointer; /* Change cursor on hover */
+    background-color: grey; /* Change background on hover */
+    transform: scale(1.1); /* Scale up effect on hover */
+}
+
+/* Media queries for responsive design */
+
+/* For screens 481px and larger (tablets) */
+@media screen and (min-width: 481px) {
+    form {
+        width: 500px; /* Form width for tablets */
+    }
+
+    .form-group {
+        flex-direction: row; /* Change direction to horizontal */
+        justify-content: space-between; /* Space between label and input */
+    }
+
+    .form-input {
+        width: 70%; /* Width for inputs on larger screens */
+    }
+    
+    .bttn {
+        padding-bottom: 20px; /* Space below button */
+    }
+}
