@@ -39,9 +39,20 @@ footer {
     font-size: 12px; /* Font size for copyright text */
 }
 
+.email {
+    color: var(--secondary-color); /* Color for email link */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
 /* Back to top link */
 .back {
-    color: var(--primary-fontcolor); /* Color for the back to top link */
-    text-decoration: underline; /* Underline link for emphasis */
+    color: ghostwhite;
+    text-decoration: none;
     cursor: pointer; /* Pointer cursor on hover */
+}
+
+.back:hover {
+    transition: transform 0.3s, color 0.3s;
+    transform: scale(1.2);
+    color: var(--primary-fontcolor);
 }

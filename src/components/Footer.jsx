@@ -22,7 +22,7 @@ export default function Footer() {
             </div>
             {/* Phone and address information */}
             <div className="info">
-                <p>Contact: <a href="mailto:luke.z.harris@hotmail.com">luke.z.harris@hotmail.com</a></p>
+                <p>Contact: <a href="mailto:luke.z.harris@hotmail.com" className="email">luke.z.harris@hotmail.com</a></p>
                 <p>Address: QLD, Australia</p>
             </div>
             {/* Link back to top */}

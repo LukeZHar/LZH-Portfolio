@@ -31,40 +31,40 @@ export default function AboutPage() {
                             <ul>
                                 {/* <!-- List item included with a icon (Thanks Fontawesome)--> */}
                                 <li>
-                                    Gaming <FontAwesomeIcon icon={faHeadset} />
+                                    Gaming <FontAwesomeIcon icon={faHeadset} className='icon'/>
                                 </li>
                                 <li>
-                                    Coding <FontAwesomeIcon icon={faLaptopCode} />
+                                    Coding <FontAwesomeIcon icon={faLaptopCode} className='icon'/>
                                 </li>
                                 <li>
-                                    Hanging with friends and meeting new people <FontAwesomeIcon icon={faUserGroup} />
+                                    Hanging with friends and meeting new people <FontAwesomeIcon icon={faUserGroup} className='icon'/>
                                 </li>
                             </ul>
                         </section>
                         <section className='skills'>
                             <h3>My Skills</h3>
                             <ul>
-                                <li>HTML <FontAwesomeIcon icon={faHtml5} /></li>
-                                <li>CSS <FontAwesomeIcon icon={faCss3} /></li>
-                                <li>JavaScript <FontAwesomeIcon icon={faJs} /> </li>
-                                <li>React <FontAwesomeIcon icon={faReact} /></li>
-                                <li>Node.js <FontAwesomeIcon icon={faNode} /></li>
-                                <li>Express.js <FontAwesomeIcon icon={faNodeJs} /></li>
-                                <li>SQL <FontAwesomeIcon icon={faDatabase} /></li>
-                                <li>Python <FontAwesomeIcon icon={faPython} /></li>
+                                <li>HTML <FontAwesomeIcon icon={faHtml5} className='icon'/></li>
+                                <li>CSS <FontAwesomeIcon icon={faCss3} className='icon'/></li>
+                                <li>JavaScript <FontAwesomeIcon icon={faJs} className='icon'/> </li>
+                                <li>React <FontAwesomeIcon icon={faReact} className='icon'/></li>
+                                <li>Node.js <FontAwesomeIcon icon={faNode} className='icon'/></li>
+                                <li>Express.js <FontAwesomeIcon icon={faNodeJs} className='icon'/></li>
+                                <li>SQL <FontAwesomeIcon icon={faDatabase} className='icon'/></li>
+                                <li>Python <FontAwesomeIcon icon={faPython} className='icon'/></li>
                             </ul>
                         </section>
                         <section className='tools'>
                             <h3>Tools</h3>
                             <ul>
                                 <li>
-                                    VSCode <FontAwesomeIcon icon={faCode} />
+                                    VSCode  <FontAwesomeIcon icon={faCode} className='icon'/>
                                 </li>
                                 <li>
-                                    Github Repo <FontAwesomeIcon icon={faSquareGithub} />
+                                    Github Repo <FontAwesomeIcon icon={faSquareGithub} className='icon'/>
                                 </li>
                                 <li>
-                                    Terminal (including WSL and powershare) <FontAwesomeIcon icon={faTerminal} />
+                                    Terminal (including WSL and powershare) <FontAwesomeIcon icon={faTerminal} className='icon'/>
                                 </li>
                             </ul>
                         </section>

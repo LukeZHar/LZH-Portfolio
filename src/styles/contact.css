@@ -36,6 +36,7 @@ strong {
 /* Form label styling */
 .form-group label {
     font-size: 18px; /* Font size for labels */
+    text-align: start; /* Align labels to the left */;
 }
 
 /* Form input styling */

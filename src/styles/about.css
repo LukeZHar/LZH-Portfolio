@@ -22,7 +22,7 @@ main img {
 .about-text {
     text-align: start; /* Align text to the left */
     margin: 24px 4px; /* Margin on all sides */
-    padding: 7px 20px; /* Padding for the text block */
+    padding: 2px 20px; /* Padding for the text block */
     border: solid black; /* Border around the text block */
     background-color: var(--primary-background); /* Background color */
     color: var(--primary-fontcolor); /* Font color */
@@ -31,16 +31,17 @@ main img {
 /* Headings and icon styling */
 h2 {
     color: var(--secondary-color); /* Heading color */
-    text-decoration: underline; /* Underline heading */
+    
 }
 
 h3, h4 {
     color: var(--secondary-color); /* Color for h3 and h4 */
+    text-decoration: none; /* Underline text */
 }
 
-.interests li, .skills li, .tools li {
+.interests li, .skills li, .tools li, .more li {
     display: flex; /* Align text and icons */
-    align-items: center; /* Center items vertically */
+    align-items: center; /* Center items vertically */     
 }
 
 .interests li i, .skills li i, .tools li i {
@@ -52,9 +53,12 @@ h3, h4 {
 .interests li:hover i, .skills li:hover i, .tools li:hover i {
     color: lightblue; /* Change color on hover */
 }
-fontawesome {
+
+
+.icon {
     color: var(--secondary-color); /* Icon color */
     font-size: 25px; /* Icon size */
+    margin-left: 15px; /* Space between icon and text */
 }
 
 /* Resume button styling */
@@ -69,6 +73,10 @@ fontawesome {
     text-align: center; /* Center text */
     cursor: pointer; /* Change cursor to pointer on hover */
     transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+button {
+    margin-bottom: 20px;
 }
 
 .resume:hover {
