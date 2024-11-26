@@ -53,7 +53,9 @@ export default function ContactPage() {
                     <h2>Contact Me</h2>
                     {/* <!-- short paragraph with a bold email text --> */}
                     <p> You can email me here: <strong>luke.z.harris@hotmail.com</strong></p>
-                    <p>Or fill out the form below and I'll get back to you as soon as I can!</p>
+                    <p>Or fill out the form below and </p>
+                    <p>I'll get back to you as soon as I can!</p>
+                    <p> (Work in progress)</p>
                     {/* <!-- Added a break to space it out a bit more --> */}
                     <br></br>
                     {/* <!-- Input text zone --> */}

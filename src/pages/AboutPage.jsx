@@ -69,45 +69,45 @@ export default function AboutPage() {
                             </ul>
                         </section>
                         <section className="more">
-                        <h3>Certificates</h3>
-                        <ul>
-                            <li>
-                                Dimploma of I.T - Coder Academy
-                            </li>
-                            <li>
-                                Udemy Certificate for
-                                "Learn how to become an amazing QA Professional Tester"
-                                course.
-                            </li>
-                            <li>
-                                Certificate IV in Commercial Cookery - TAFE
-                            </li>
-                            <li>
-                                Certificate III in Commercial Cookery - TAFE
-                            </li>
-                        </ul>
-                        <h3>A bit more about me</h3>
-                        <p>
-                            I have been working as a Certificate IV qualified
-                            Chef for 16 years but it's not something I am truely
-                            passionate about, so I am undertaking this Coder
-                            Academy bootcamp course for a Full-stack developer
-                            to persue a career in I.T (which is something I am
-                            passionate about).
-                        </p>
+                            <h3>Certificates</h3>
+                            <ul>
+                                <li>
+                                    Dimploma of I.T - Coder Academy
+                                </li>
+                                <li>
+                                    Udemy Certificate for
+                                    "Learn how to become an amazing QA Professional Tester"
+                                    course.
+                                </li>
+                                <li>
+                                    Certificate IV in Commercial Cookery - TAFE
+                                </li>
+                                <li>
+                                    Certificate III in Commercial Cookery - TAFE
+                                </li>
+                            </ul>
+                            <h3>A bit more about me</h3>
+                            <p>
+                                I have been working as a Certificate IV qualified
+                                Chef for 16 years but it's not something I am truely
+                                passionate about, so I am undertaking this Coder
+                                Academy bootcamp course for a Full-stack developer
+                                to persue a career in I.T (which is something I am
+                                passionate about).
+                            </p>
                         </section>
                         {/* <!-- Section to access my resume --> */}
                         <section className="Resume-section">
                             <h4>You can view my Resume below: </h4>
                             {/* <!-- Link to resume pdf --> */}
-                            <a href="/">
+                            <a href={require("../assets/Resume/Luke Resume 2025.pdf")}>
                                 <button type="button" className="resume">Resume</button>
                             </a>
                         </section>
                     </div>
                 </section>
             </main>
-            <Footer/>
+            <Footer />
         </div >
     )
 }
