@@ -10,36 +10,76 @@ export default function ProjectsPage() {
         <div>
             <Header />
             <main>
-                <article class="project">
+                <article className="project">
                     <section>
-                        {/* <!-- Title for projects --> */}
-                        <h3>Game Management API</h3>
+                        <h3>SimonSays</h3>
                     </section>
                     <section>
-                        {/* <!-- image for the project --> */}
-                        <img className="project-image"
-                            src=""
-                            alt="project post" />
+                        <video controls className="project-video">
+                            <source src={require("../assets/videos/simonsays.mp4")} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                        <a href="https://github.com/LukeZHar/Simon-says" target="_blank" rel="noopener noreferrer">
+                            <button className="code-button">View Code on GitHub</button>
+                        </a>
+                    </section>
+                </article>
+                <article className="project">
+                    <section>
+                        {/* <!-- Title for projects --> */}
+                        <h3>Pokemon API</h3>
+                       
+                    </section>
+                    <section>
+                        <video controls className="project-video">
+                            <source src={require("../assets/videos/PokemonAPI.mp4")} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                        <a href="https://github.com/LukeZHar/T3W6-PokemonAPI" target="_blank" rel="noopener noreferrer">
+                            <button className="code-button">View Code on GitHub</button>
+                        </a>
                     </section>
                 </article>
                 <article className="project">
                     <section >
-                        <h3>Flashcard CLI App</h3>
+                        <h3>Typing Speed Test</h3>
                     </section>
                     <section>
-                        <img className="project-image"
-                            src=""
-                            alt="project post" />
+                        <video controls className="project-video">
+                            <source src={require("../assets/videos/TypingSpeedTest.mp4")} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                        <a href="https://github.com/LukeZHar/t3w4-TypingSpeedTest" target="_blank" rel="noopener noreferrer">
+                            <button className="code-button">View Code on GitHub</button>
+                        </a>
                     </section>
                 </article>
                 <article className="project">
                     <section>
-                        <h3>Basic Webiste Using HTML:5 and CSS</h3>
+                        <h3>Flashcard CLI app</h3>
                     </section>
                     <section>
-                        <img className="project-image"
-                            src=""
-                            alt="project post" />
+                        <video controls className="project-video">
+                            <source src={require("../assets/videos/flashcardCLI.mp4")} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                        <a href="https://github.com/LukeZHar/T1A3-Terminal_application" target="_blank" rel="noopener noreferrer">
+                            <button className="code-button">View Code on GitHub</button>
+                        </a>
+                    </section>
+                </article>
+                <article className="project">
+                    <section>
+                        <h3>Game management API</h3>
+                    </section>
+                    <section>
+                        <video controls className="project-video">
+                            <source src={require("../assets/videos/GameManagementAPI.mp4")} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                        <a href="https://github.com/LukeZHar/LukeHarris-T2A2" target="_blank" rel="noopener noreferrer">
+                            <button className="code-button">View Code on GitHub</button>
+                        </a>
                     </section>
                 </article>
             </main>

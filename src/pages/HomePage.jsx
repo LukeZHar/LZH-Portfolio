@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 /* eslint-disable jsx-a11y/img-redundant-alt */
 export default function HomePage() {
     return (
-        <div>
+        <div className="home-page">
             <Header />
             <main>
                 <section className="main-section">
@@ -14,7 +14,7 @@ export default function HomePage() {
                         <img src={require("../assets/Resume-pic.jpg")} alt="Me" />
                     </div>
                     <div className="home-text">
-                        <p className="who">
+                        <div className="who">
                             <div className="container">
                                 <h1 className="text">Hello, I'm Luke Harris!</h1>
                             </div>
@@ -22,19 +22,12 @@ export default function HomePage() {
                                 Welcome to my portfolio website, 
                             </p>
                             <p>
-                                I am a Junior Full Stack Developer
+                            Aspiring Full-Stack Developer with dedicated training from Coder Academy Bootcamp, aiming to advance a career in the IT and gaming industry. 
                             </p>
                             <p>
-                                Coding languages I have used: 
-                                
+                            Leveraging problem-solving skills and creativity honed during a culinary career, I am passionate about technology, regularly building and upgrading personal computers, and producing content for a gaming-focused YouTube channel. Seeking hands-on opportunities to further enhance skills in software development
                             </p>
-                            <p>   
-                                HTML, CSS, JavaScript, React, Node.js, Express.js, SQL, and Python.
-                            </p>
-                            <p>
-                                I'm really looking forward to learning new coding languages and getting to transition into the coding world!!!
-                            </p>
-                        </p>
+                        </div>
                     </div>
                 </section>
             </main>

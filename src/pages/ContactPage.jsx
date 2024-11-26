@@ -7,6 +7,7 @@ import '../styles/styles.css';   // If you have shared styles
 
 
 
+
 export default function ContactPage() {
 
     const [name, setName] = useState('');

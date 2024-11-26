@@ -3,6 +3,9 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import '../styles/about.css';
 import '../styles/styles.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHtml5, faCss3, faJs, faReact, faNode, faNodeJs, faPython, faSquareGithub } from '@fortawesome/free-brands-svg-icons';
+import { faHeadset, faLaptopCode, faUserGroup, faTerminal, faCode, faDatabase } from '@fortawesome/free-solid-svg-icons'; // Add solid icons here
 
 
 export default function AboutPage() {
@@ -28,43 +31,40 @@ export default function AboutPage() {
                             <ul>
                                 {/* <!-- List item included with a icon (Thanks Fontawesome)--> */}
                                 <li>
-                                    Gaming <i class="fa-solid fa-headset"></i>
+                                    Gaming <FontAwesomeIcon icon={faHeadset} />
                                 </li>
                                 <li>
-                                    Coding <i class="fa-solid fa-laptop-code"></i>
+                                    Coding <FontAwesomeIcon icon={faLaptopCode} />
                                 </li>
                                 <li>
-                                    Hanging with friends and meeting new people <i
-                                        class="fa-solid fa-user-group"></i>
+                                    Hanging with friends and meeting new people <FontAwesomeIcon icon={faUserGroup} />
                                 </li>
                             </ul>
                         </section>
                         <section className='skills'>
                             <h3>My Skills</h3>
                             <ul>
-                                <li>HTML <i class="fa-brands fa-html5"></i></li>
-                                <li>CSS <i class="fa-brands fa-css3"></i></li>
-                                <li>JavaScript <i class="fa-brands fa-js"></i> </li>
-                                <li>React <i class="fa-brands fa-react"></i></li>
-                                <li>Node.js<i class="fa-brands fa-node"></i></li>
-                                <li>Express.js <i class="fa-brands fa-node-js"></i></li>
-                                <li>SQL <i class="fa-solid fa-database"></i></li>
-                                <li>Python <i class="fa-brands fa-python"></i></li>
+                                <li>HTML <FontAwesomeIcon icon={faHtml5} /></li>
+                                <li>CSS <FontAwesomeIcon icon={faCss3} /></li>
+                                <li>JavaScript <FontAwesomeIcon icon={faJs} /> </li>
+                                <li>React <FontAwesomeIcon icon={faReact} /></li>
+                                <li>Node.js <FontAwesomeIcon icon={faNode} /></li>
+                                <li>Express.js <FontAwesomeIcon icon={faNodeJs} /></li>
+                                <li>SQL <FontAwesomeIcon icon={faDatabase} /></li>
+                                <li>Python <FontAwesomeIcon icon={faPython} /></li>
                             </ul>
                         </section>
                         <section className='tools'>
                             <h3>Tools</h3>
                             <ul>
                                 <li>
-                                    VSCode <i class="fa-solid fa-code"></i>
+                                    VSCode <FontAwesomeIcon icon={faCode} />
                                 </li>
                                 <li>
-                                    Github Repo <i
-                                        class="fa-brands fa-square-github"></i>
+                                    Github Repo <FontAwesomeIcon icon={faSquareGithub} />
                                 </li>
                                 <li>
-                                    Terminal (including WSL and powershare) <i
-                                        class="fa-solid fa-terminal"></i>
+                                    Terminal (including WSL and powershare) <FontAwesomeIcon icon={faTerminal} />
                                 </li>
                             </ul>
                         </section>

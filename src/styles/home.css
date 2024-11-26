@@ -48,7 +48,7 @@ main img {
         margin: 20px; /* Margin around the section */
     }
       
-    main img {
+    .main-img {
         width: 250px; /* Specific image width */
         height: auto; /* Maintain aspect ratio */
         margin: 10px 50px; /* Margin around the image */

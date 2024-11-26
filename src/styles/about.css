@@ -38,7 +38,21 @@ h3, h4 {
     color: var(--secondary-color); /* Color for h3 and h4 */
 }
 
-i {
+.interests li, .skills li, .tools li {
+    display: flex; /* Align text and icons */
+    align-items: center; /* Center items vertically */
+}
+
+.interests li i, .skills li i, .tools li i {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 20px; /* Adjust icon size as necessary */
+    color: var(--secondary-color); /* Set icon color */
+}
+
+.interests li:hover i, .skills li:hover i, .tools li:hover i {
+    color: lightblue; /* Change color on hover */
+}
+fontawesome {
     color: var(--secondary-color); /* Icon color */
     font-size: 25px; /* Icon size */
 }
@@ -81,5 +95,15 @@ i {
 @media screen and (min-width: 1080px) {
     .about-text {
         margin-right: 50px; /* Increase right margin on larger screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .socials a {
+        font-size: 20px; /* Decrease size on smaller screens */
+    }
+
+    .interests li i, .skills li i, .tools li i  {
+        font-size: 18px; /* Give a slightly smaller size on mobile */
     }
 }
