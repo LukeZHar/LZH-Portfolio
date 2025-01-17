@@ -100,7 +100,7 @@ export default function AboutPage() {
                         <section className="Resume-section">
                             <h4>You can view my Resume below: </h4>
                             {/* <!-- Link to resume pdf --> */}
-                            <a href={require("../assets/Resume/Luke Resume 2025.pdf")}>
+                            <a href={require("../assets/Resume/Luke Harris Resume.pdf")}>
                                 <button type="button" className="resume">Resume</button>
                             </a>
                         </section>
